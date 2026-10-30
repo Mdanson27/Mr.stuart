@@ -9,23 +9,19 @@ const saveButtons = [
   document.getElementById('saveMobile')
 ].filter(Boolean);
 
-window.addEventListener('load', () => {
-  window.setTimeout(() => {
-    loader?.classList.add('is-hidden');
-    document.body.classList.remove('loading');
-  }, 1650);
-});
-
-window.setTimeout(() => {
+function closeLoader() {
   loader?.classList.add('is-hidden');
   document.body.classList.remove('loading');
-}, 3200);
+}
+
+window.addEventListener('load', () => window.setTimeout(closeLoader, 1350));
+window.setTimeout(closeLoader, 2800);
 
 function showToast(message) {
   if (!toast) return;
   toast.textContent = message;
   toast.classList.add('show');
-  window.setTimeout(() => toast.classList.remove('show'), 2200);
+  window.setTimeout(() => toast.classList.remove('show'), 1900);
 }
 
 function downloadVCard() {
@@ -59,17 +55,17 @@ function downloadVCard() {
 
 saveButtons.forEach((button) => button.addEventListener('click', downloadVCard));
 
-if ('IntersectionObserver' in window) {
+if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
-      entry.target.animate([
-        { opacity: 0, transform: 'translateY(18px)' },
-        { opacity: 1, transform: 'translateY(0)' }
-      ], { duration: 620, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'both' });
+      entry.target.animate(
+        [{ opacity: 0, transform: 'translateY(14px)' }, { opacity: 1, transform: 'translateY(0)' }],
+        { duration: 520, easing: 'cubic-bezier(.22,.7,.2,1)', fill: 'both' }
+      );
       observer.unobserve(entry.target);
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.14 });
 
-  document.querySelectorAll('.panel, .connect-card').forEach((element) => observer.observe(element));
+  document.querySelectorAll('.profile-head, .profile-body, .connect-copy, .office-card').forEach((el) => observer.observe(el));
 }
