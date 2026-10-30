@@ -14,8 +14,8 @@ function closeLoader() {
   document.body.classList.remove('loading');
 }
 
-window.addEventListener('load', () => window.setTimeout(closeLoader, 1350));
-window.setTimeout(closeLoader, 2800);
+window.addEventListener('load', () => window.setTimeout(closeLoader, 1800));
+window.setTimeout(closeLoader, 3400);
 
 function showToast(message) {
   if (!toast) return;
