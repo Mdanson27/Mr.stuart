@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f7fbff" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6fbff" />
   <meta name="description" content="Official smart digital business profile for Stuart Sengonzi Sebunya — Business Development Lead & Head of Diaspora Engagement at Honest Estate Developers Ltd." />
+  <meta property="og:title" content="Stuart Sengonzi Sebunya | Smart Digital Profile" />
+  <meta property="og:description" content="Business Development Lead & Head of Diaspora Engagement at Honest Estate Developers Ltd." />
+  <meta property="og:image" content="picture.png" />
   <title>Stuart Sengonzi Sebunya | Smart Digital Profile</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,111 +16,79 @@
 </head>
 <body>
   <div class="loader" id="loader" aria-hidden="true">
-    <div class="loader-orbit loader-orbit-one"></div>
-    <div class="loader-orbit loader-orbit-two"></div>
+    <div class="loader-halo halo-a"></div>
+    <div class="loader-halo halo-b"></div>
     <div class="loader-core">
-      <div class="loader-logo-shell">
-        <img src="logo.png" alt="Honest Estate Developers logo" class="loader-logo" onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');" />
-      </div>
+      <div class="loader-logo-shell"><img src="logo.png" alt="" class="loader-logo" /></div>
+      <span class="loader-overline">HONEST ESTATE DEVELOPERS LTD</span>
       <div class="loader-name">STUART</div>
       <div class="loader-line"><span></span></div>
-      <p>Business • Property • Diaspora</p>
+      <p>Business · Property · Diaspora</p>
     </div>
   </div>
 
-  <div class="page-shell" id="pageShell">
+  <div class="site" id="pageShell">
     <header class="topbar">
       <a class="brand-mark" href="#home" aria-label="Stuart profile home">
-        <span class="brand-logo-wrap">
-          <img src="logo.png" alt="Honest Estate Developers Ltd" class="brand-logo" onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');" />
-        </span>
-        <span class="brand-copy">
-          <strong>Stuart Sengonzi Sebunya</strong>
-          <small>Digital Business Profile</small>
-        </span>
+        <span class="brand-logo-wrap"><img src="logo.png" alt="Honest Estate Developers Ltd" class="brand-logo" /></span>
+        <span class="brand-copy"><strong>Stuart Sengonzi Sebunya</strong><small>Executive Digital Profile</small></span>
       </a>
-      <button class="save-mini" id="saveMini" type="button" aria-label="Save Stuart's contact">Save Contact</button>
+      <button class="save-mini" id="saveMini" type="button"><span>＋</span> Save Contact</button>
     </header>
 
     <main>
       <section class="hero section" id="home">
         <div class="hero-visual">
+          <div class="shape shape-one"></div><div class="shape shape-two"></div>
           <div class="portrait-frame">
-            <div class="portrait-glow"></div>
-            <img src="picture.png" alt="Portrait of Stuart Sengonzi Sebunya" class="portrait" onerror="this.style.display='none'; this.parentElement.classList.add('portrait-fallback');" />
-            <div class="portrait-initials">SS</div>
-            <span class="availability-dot"></span>
+            <img src="picture.png" alt="Stuart Sengonzi Sebunya" class="portrait" />
+            <div class="portrait-badge"><span></span> Business Executive</div>
           </div>
-          <div class="floating-card floating-card-one">
-            <span>01</span>
-            <strong>Business Development</strong>
-          </div>
-          <div class="floating-card floating-card-two">
-            <span>02</span>
-            <strong>Diaspora Engagement</strong>
-          </div>
+          <div class="floating-card card-one"><small>FOCUS</small><strong>Business Development</strong></div>
+          <div class="floating-card card-two"><small>REGION</small><strong>Diaspora Engagement</strong></div>
         </div>
 
         <div class="hero-copy">
           <div class="eyebrow"><span></span> Executive Profile</div>
           <h1>Stuart <em>Sengonzi</em> Sebunya</h1>
-          <p class="role">Business Development Lead &amp; Head of Diaspora Engagement</p>
-          <a class="company" href="https://honestestatedevelopers.com" target="_blank" rel="noreferrer">
-            <span class="company-icon">H</span>
-            <span><strong>Honest Estate Developers Ltd</strong><small>Martin Road · Old Kampala</small></span>
-          </a>
-          <p class="intro">A results-driven business executive bringing together real estate growth, strategic partnerships, entrepreneurship and digital transformation.</p>
+          <p class="role">Business Development Lead <span>&amp;</span> Head of Diaspora Engagement</p>
+          <div class="company-card">
+            <span class="company-logo"><img src="logo.png" alt="Honest Estate Developers Ltd logo" /></span>
+            <span><strong>Honest Estate Developers Ltd</strong><small>Martin Road · Old Kampala · Uganda</small></span>
+          </div>
+          <p class="intro">A growth-focused executive combining real estate, entrepreneurship, strategic partnerships and digital transformation to build meaningful business connections.</p>
 
           <div class="primary-actions">
-            <button class="action-btn action-primary" id="saveContact" type="button">
-              <span class="action-icon">+</span><span>Save Contact</span>
-            </button>
-            <a class="action-btn" href="tel:+256750791591">
-              <span class="action-icon">↗</span><span>Call</span>
-            </a>
-            <a class="action-btn" href="https://wa.me/256750791591" target="_blank" rel="noreferrer">
-              <span class="action-icon">✦</span><span>WhatsApp</span>
-            </a>
+            <button class="action-btn action-primary" id="saveContact" type="button"><span class="action-icon">＋</span><span><small>ADD TO PHONE</small>Save Contact</span></button>
+            <a class="action-btn" href="tel:+256750791591"><span class="action-icon">↗</span><span><small>DIRECT</small>Call Stuart</span></a>
+            <a class="action-btn" href="https://wa.me/256750791591" target="_blank" rel="noreferrer"><span class="action-icon">✦</span><span><small>MESSAGE</small>WhatsApp</span></a>
           </div>
 
           <div class="quick-links">
-            <a href="mailto:mikart56@gmail.com" aria-label="Email Stuart"><span>Mail</span><strong>mikart56@gmail.com</strong></a>
-            <a href="https://www.linkedin.com/stuart-sengonzi-mike" target="_blank" rel="noreferrer" aria-label="Stuart on LinkedIn"><span>LinkedIn</span><strong>Connect professionally</strong></a>
+            <a href="mailto:mikart56@gmail.com"><span class="ql-icon">@</span><span><small>Email</small><strong>mikart56@gmail.com</strong></span></a>
+            <a href="https://www.linkedin.com/in/stuart-sengonzi-mike" target="_blank" rel="noreferrer"><span class="ql-icon">in</span><span><small>LinkedIn</small><strong>Connect professionally</strong></span></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Martin+Road+Old+Kampala+Uganda" target="_blank" rel="noreferrer"><span class="ql-icon">⌖</span><span><small>Office</small><strong>Open in Google Maps</strong></span></a>
           </div>
         </div>
       </section>
 
       <section class="profile-grid section" id="profile">
         <article class="about-panel panel">
-          <div class="section-kicker">Profile</div>
-          <h2>Built for growth, leadership &amp; execution.</h2>
+          <div class="section-kicker">Executive Profile</div>
+          <h2>Growth-minded.<br />Strategic.<br /><em>Execution driven.</em></h2>
           <p>With over six years of leadership and entrepreneurial experience across real estate, hospitality, beauty, fashion and digital marketing, Stuart has led businesses, managed cross-functional teams and developed strategic partnerships across multiple sectors.</p>
-          <p>His Information Technology background, Cisco Networking training, Executive MBA studies and ongoing Digital Marketing &amp; E-Commerce studies reinforce a blend of commercial thinking and technical capability.</p>
-          <div class="skill-row">
-            <span>Business Growth</span><span>Leadership</span><span>Partnerships</span><span>Real Estate</span><span>CRM &amp; Digital Systems</span><span>Process Optimisation</span>
-          </div>
+          <p>His Information Technology background, Cisco Networking training, Executive MBA studies and ongoing Digital Marketing &amp; E-Commerce studies reinforce a distinctive mix of commercial thinking and technical capability.</p>
+          <div class="skill-row"><span>Business Growth</span><span>Leadership</span><span>Strategic Partnerships</span><span>Real Estate</span><span>CRM &amp; Digital Systems</span><span>Process Optimisation</span></div>
         </article>
 
         <article class="experience-panel panel">
-          <div class="section-kicker">Leadership</div>
-          <h2>Current &amp; entrepreneurial roles.</h2>
+          <div class="section-kicker">Leadership Portfolio</div>
+          <h2>Building across <em>multiple sectors.</em></h2>
           <div class="timeline">
-            <div class="timeline-item active">
-              <span class="timeline-dot"></span>
-              <div><small>Current</small><strong>Business Development Lead &amp; Head of Diaspora Engagement</strong><p>Honest Estate Developers Ltd</p></div>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-dot"></span>
-              <div><small>Founder &amp; CEO</small><strong>Dorah Haven Motel SMC Ltd</strong></div>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-dot"></span>
-              <div><small>Founder &amp; CEO</small><strong>Stuwie's Salon &amp; Spa</strong></div>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-dot"></span>
-              <div><small>Founder &amp; CEO</small><strong>Haves Realty Consults Ltd</strong></div>
-            </div>
+            <div class="timeline-item active"><span class="timeline-dot"></span><div><small>Current Role</small><strong>Business Development Lead &amp; Head of Diaspora Engagement</strong><p>Honest Estate Developers Ltd</p></div></div>
+            <div class="timeline-item"><span class="timeline-dot"></span><div><small>Founder &amp; CEO</small><strong>Dorah Haven Motel SMC Ltd</strong></div></div>
+            <div class="timeline-item"><span class="timeline-dot"></span><div><small>Founder &amp; CEO</small><strong>Stuwie's Salon &amp; Spa</strong></div></div>
+            <div class="timeline-item"><span class="timeline-dot"></span><div><small>Founder &amp; CEO</small><strong>Haves Realty Consults Ltd</strong></div></div>
           </div>
         </article>
       </section>
@@ -125,33 +96,37 @@
       <section class="final-section section" id="connect">
         <div class="connect-card">
           <div class="connect-copy">
-            <div class="section-kicker light">Connect</div>
-            <h2>Let’s create valuable business connections.</h2>
-            <p>For real estate opportunities, partnerships, diaspora engagement and business development conversations.</p>
+            <div class="section-kicker light">Let’s Connect</div>
+            <h2>Creating valuable connections across property, business &amp; diaspora networks.</h2>
+            <p>For real estate opportunities, strategic partnerships, diaspora engagement and business development conversations.</p>
+            <button class="big-save" id="saveBottom" type="button"><span>＋</span><span><small>ONE TAP CONTACT CARD</small>Save Stuart to Contacts</span></button>
           </div>
-          <div class="connect-actions">
-            <a href="tel:+256750791591" class="connect-link"><span>Call directly</span><strong>+256 750 791 591</strong></a>
-            <a href="mailto:mikart56@gmail.com" class="connect-link"><span>Send an email</span><strong>mikart56@gmail.com</strong></a>
-            <a href="https://wa.me/256750791591" target="_blank" rel="noreferrer" class="connect-link"><span>Start a chat</span><strong>WhatsApp</strong></a>
+          <div class="connect-side">
+            <a href="tel:+256750791591" class="connect-link"><span>Phone</span><strong>+256 750 791 591</strong><b>↗</b></a>
+            <a href="mailto:mikart56@gmail.com" class="connect-link"><span>Email</span><strong>mikart56@gmail.com</strong><b>↗</b></a>
+            <a href="https://wa.me/256750791591" target="_blank" rel="noreferrer" class="connect-link"><span>WhatsApp</span><strong>Start a conversation</strong><b>↗</b></a>
+            <div class="map-card">
+              <iframe title="Honest Estate Developers office location" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Martin%20Road%2C%20Old%20Kampala%2C%20Uganda&output=embed"></iframe>
+              <a href="https://www.google.com/maps/search/?api=1&query=Martin+Road+Old+Kampala+Uganda" target="_blank" rel="noreferrer"><span><small>OFFICE LOCATION</small><strong>Martin Road, Old Kampala</strong></span><b>Open Maps ↗</b></a>
+            </div>
           </div>
         </div>
 
         <footer class="footer">
-          <div>
-            <strong>Stuart Sengonzi Sebunya</strong>
-            <span>Professional Smart Digital Profile</span>
-          </div>
-          <a class="autominds-signature" href="https://automindsafrica.com" target="_blank" rel="noreferrer" aria-label="Made by AutoMinds Africa">
-            <span class="made-by">Made by</span>
-            <span class="autominds-name"><i>Auto</i>Minds Africa</span>
-            <span class="autominds-tag">WORK SMARTER · MOVE FASTER</span>
-          </a>
+          <div class="footer-person"><strong>Stuart Sengonzi Sebunya</strong><span>Executive Smart Digital Profile</span></div>
+          <a class="autominds-signature" href="https://automindsafrica.com" target="_blank" rel="noreferrer"><span class="made-by">Made by</span><span class="autominds-name"><i>Auto</i>Minds Africa</span><span class="autominds-tag">WORK SMARTER · MOVE FASTER</span></a>
         </footer>
       </section>
     </main>
   </div>
 
-  <div class="toast" id="toast" role="status" aria-live="polite">Contact card downloaded</div>
+  <nav class="mobile-dock" aria-label="Quick contact actions">
+    <a href="tel:+256750791591"><span>☎</span><small>Call</small></a>
+    <button id="saveMobile" type="button"><span>＋</span><small>Save Contact</small></button>
+    <a href="https://wa.me/256750791591" target="_blank" rel="noreferrer"><span>✦</span><small>WhatsApp</small></a>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Contact card saved</div>
   <script src="script.js"></script>
 </body>
 </html>
