@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#fffdf7" />
   <meta name="description" content="Executive digital profile of Stuart Sengonzi Sebunya — Business Development Lead & Head of Diaspora Engagement." />
   <meta property="og:title" content="Stuart Sengonzi Sebunya | Executive Digital Profile" />
   <meta property="og:description" content="Business Development Lead & Head of Diaspora Engagement." />
   <meta property="og:image" content="picture.png" />
   <title>Stuart Sengonzi Sebunya | Executive Profile</title>
-  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
@@ -17,10 +17,19 @@
 </head>
 <body>
   <div class="loader" id="loader" aria-hidden="true">
-    <div class="loader-mark"><span>S</span><i></i><span>S</span></div>
-    <div class="loader-name">Stuart Sengonzi Sebunya</div>
-    <div class="loader-rule"><span></span></div>
-    <p>Executive Digital Profile</p>
+    <div class="loader-stage">
+      <span class="loader-orbit orbit-one"></span>
+      <span class="loader-orbit orbit-two"></span>
+      <span class="loader-dot dot-one"></span>
+      <span class="loader-dot dot-two"></span>
+      <div class="loader-monogram">SS</div>
+    </div>
+    <div class="loader-copy">
+      <span class="loader-kicker">EXECUTIVE PROFILE</span>
+      <div class="loader-name">Stuart Sengonzi Sebunya</div>
+      <div class="loader-rule"><span></span></div>
+      <p>Business · Property · Diaspora</p>
+    </div>
   </div>
 
   <div class="site">
@@ -29,13 +38,18 @@
         <span class="identity-monogram">SS</span>
         <span><strong>Stuart Sengonzi Sebunya</strong><small>Executive Digital Profile</small></span>
       </a>
-      <button class="top-save" id="saveMini" type="button">Save Contact</button>
+      <button class="top-save" id="saveMini" type="button"><span>＋</span> Save Contact</button>
     </header>
 
     <main>
       <section class="screen hero" id="home">
-        <div class="portrait-wrap">
-          <img src="picture.png" alt="Stuart Sengonzi Sebunya" class="portrait" />
+        <div class="portrait-stage">
+          <div class="portrait-accent accent-top"></div>
+          <div class="portrait-accent accent-bottom"></div>
+          <div class="portrait-wrap">
+            <img src="picture.png" alt="Stuart Sengonzi Sebunya" class="portrait" />
+          </div>
+          <div class="portrait-caption"><span></span> Executive · Entrepreneur · Connector</div>
         </div>
 
         <div class="hero-copy">
@@ -43,16 +57,17 @@
           <h1>Stuart Sengonzi <span>Sebunya</span></h1>
           <p class="role">Business Development Lead &amp; Head of Diaspora Engagement</p>
 
-          <a class="company-row" href="https://www.google.com/maps/search/?api=1&query=Martin+Road+Old+Kampala+Uganda" target="_blank" rel="noreferrer">
+          <a class="company-row" href="https://www.google.com/maps/dir/?api=1&destination=Martin+Road+Old+Kampala+Uganda" target="_blank" rel="noreferrer">
             <span class="company-logo"><img src="logo.png" alt="Honest Estate Developers Ltd" /></span>
             <span><strong>Honest Estate Developers Ltd</strong><small>Martin Road, Old Kampala · Uganda</small></span>
+            <b>↗</b>
           </a>
 
           <p class="intro">A growth-focused executive connecting real estate, entrepreneurship, strategic partnerships and diaspora opportunity.</p>
 
           <div class="actions">
             <button class="primary" id="saveContact" type="button"><span>＋</span> Save Contact</button>
-            <a href="tel:+256750791591">Call</a>
+            <a href="tel:+256750791591">Call Stuart</a>
             <a href="https://wa.me/256750791591" target="_blank" rel="noreferrer">WhatsApp</a>
           </div>
 
@@ -99,8 +114,12 @@
         </div>
 
         <div class="office-card">
-          <iframe title="Office location on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Martin%20Road%2C%20Old%20Kampala%2C%20Uganda&output=embed"></iframe>
-          <a href="https://www.google.com/maps/search/?api=1&query=Martin+Road+Old+Kampala+Uganda" target="_blank" rel="noreferrer"><span><small>OFFICE</small><strong>Martin Road, Old Kampala</strong></span><b>Open in Maps ↗</b></a>
+          <div class="map-head">
+            <span><small>STUART'S OFFICE</small><strong>Martin Road, Old Kampala</strong></span>
+            <span class="map-pin">⌖</span>
+          </div>
+          <iframe title="Stuart's office location on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Martin%20Road%2C%20Old%20Kampala%2C%20Uganda&output=embed"></iframe>
+          <a class="directions-btn" href="https://www.google.com/maps/dir/?api=1&destination=Martin+Road+Old+Kampala+Uganda" target="_blank" rel="noreferrer"><span><small>GOOGLE MAPS</small><strong>Find Directions to Stuart’s Office</strong></span><b>Get Directions ↗</b></a>
         </div>
 
         <footer>
