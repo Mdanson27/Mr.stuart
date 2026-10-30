@@ -1,6 +1,7 @@
 document.body.classList.add('loading');
 
 const loader = document.getElementById('loader');
+const typingName = document.getElementById('typingName');
 const toast = document.getElementById('toast');
 const saveButtons = [
   document.getElementById('saveContact'),
@@ -9,13 +10,50 @@ const saveButtons = [
   document.getElementById('saveMobile')
 ].filter(Boolean);
 
+const nameParts = [
+  { text: 'STUART', className: 'first' },
+  { text: ' SENGONZI', className: 'middle' },
+  { text: ' SEBUNYA', className: 'last' }
+];
+
+function typeName() {
+  if (!typingName) return;
+  typingName.innerHTML = '';
+  const full = nameParts.map(part => part.text).join('');
+  let index = 0;
+
+  function render() {
+    const current = full.slice(0, index);
+    let remaining = current;
+    typingName.innerHTML = '';
+
+    nameParts.forEach(part => {
+      if (!remaining) return;
+      const chunk = remaining.slice(0, part.text.length);
+      const span = document.createElement('span');
+      span.className = part.className;
+      span.textContent = chunk;
+      typingName.appendChild(span);
+      remaining = remaining.slice(chunk.length);
+    });
+
+    if (index < full.length) {
+      index += 1;
+      window.setTimeout(render, index < 7 ? 72 : 46);
+    }
+  }
+
+  render();
+}
+
 function closeLoader() {
   loader?.classList.add('is-hidden');
   document.body.classList.remove('loading');
 }
 
-window.addEventListener('load', () => window.setTimeout(closeLoader, 1800));
-window.setTimeout(closeLoader, 3400);
+typeName();
+window.addEventListener('load', () => window.setTimeout(closeLoader, 2200));
+window.setTimeout(closeLoader, 3600);
 
 function showToast(message) {
   if (!toast) return;
